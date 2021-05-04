@@ -1,8 +1,8 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = require('./assertEqual');  
+const head = function(arr) {
   
-  const head = actual.slice(0, 1);
-  console.log(head);
+  console.log(arr[0]);
+
 };
 
-assertEqual([5,6,7], 5);
-assertEqual(["Hello", "Lighthouse", "Labs"], "Hello");
+module.exports = head;
