@@ -1,9 +1,8 @@
-const assertEqual = function(actual, expected) {
-  const tail = actual.slice(1, actual.length);
-
-  console.log(tail);
-
+//const assertEqual = function(actual, expected) {
+const tail = function(arr) {
+    
+  return arr.slice(1);
 };
 
-assertEqual([5,6,7], 5);
-assertEqual(["Hello", "Lighthouse", "Labs"], "Hello");
+module.exports = tail;
+
